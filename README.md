@@ -21,6 +21,6 @@ MongoDB
 Bull
 Image thumbnail
 Mime-Types
-Redis
+Redis.
 
 A project done by Authers: Isaac Kumatse romeokumatse@gmail.com and Gilbert Henyo
