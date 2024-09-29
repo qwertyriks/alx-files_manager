@@ -30,7 +30,7 @@ class DBClient {
   }
 
   /**
-   * Retrieves the number of users in the database.
+   * Collects the number of users in the database.
    * @returns {Promise<Number>}
    */
   async nbUsers() {
@@ -38,7 +38,7 @@ class DBClient {
   }
 
   /**
-   * Retrieves the number of files in the database.
+   * Collects the number of files in the database.
    * @returns {Promise<Number>}
    */
   async nbFiles() {
@@ -46,7 +46,7 @@ class DBClient {
   }
 
   /**
-   * Retrieves a reference to the `users` collection.
+   * Collects a reference to the `users` collection.
    * @returns {Promise<Collection>}
    */
   async usersCollection() {
@@ -54,7 +54,7 @@ class DBClient {
   }
 
   /**
-   * Retrieves a reference to the `files` collection.
+   * Collects a reference to the `files` collection.
    * @returns {Promise<Collection>}
    */
   async filesCollection() {
