@@ -1,18 +1,14 @@
 import mongodb from 'mongodb';
-
-/*
-* eslint-disable-next-line no unused-vars
-*/
-
+// eslint-disable-next-line no-unused-vars
 import Collection from 'mongodb/lib/collection';
 import envLoader from './env_loader';
 
 /**
- * Representing a MongoDB client.
+ * Represents a MongoDB client.
  */
 class DBClient {
   /**
-   * Creating a new DBClient instance.
+   * Creates a new DBClient instance.
    */
   constructor() {
     envLoader();
@@ -26,7 +22,7 @@ class DBClient {
   }
 
   /**
-   * Checking if this client's connection to the MongoDB server is active.
+   * Checks if this client's connection to the MongoDB server is active.
    * @returns {boolean}
    */
   isAlive() {
@@ -34,7 +30,7 @@ class DBClient {
   }
 
   /**
-   * This retrieves the number of users in the database.
+   * Retrieves the number of users in the database.
    * @returns {Promise<Number>}
    */
   async nbUsers() {
@@ -42,7 +38,7 @@ class DBClient {
   }
 
   /**
-   * This retrieves the number of files in the database.
+   * Retrieves the number of files in the database.
    * @returns {Promise<Number>}
    */
   async nbFiles() {
@@ -50,7 +46,7 @@ class DBClient {
   }
 
   /**
-   * This collects a reference to the users` collection.
+   * Retrieves a reference to the `users` collection.
    * @returns {Promise<Collection>}
    */
   async usersCollection() {
@@ -58,7 +54,7 @@ class DBClient {
   }
 
   /**
-   * This collects a reference to the files` collection.
+   * Retrieves a reference to the `files` collection.
    * @returns {Promise<Collection>}
    */
   async filesCollection() {
