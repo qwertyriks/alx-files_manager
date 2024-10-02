@@ -2,11 +2,11 @@ import { promisify } from 'util';
 import { createClient } from 'redis';
 
 /**
- * Represents a Redis client..
+ * Represents a Redis client.
  */
 class RedisClient {
   /**
-   * Creates a new RedisClient instance..
+   * Creates a new RedisClient instance.
    */
   constructor() {
     this.client = createClient();
@@ -29,8 +29,8 @@ class RedisClient {
   }
 
   /**
-   * Retrieves the value of a (given) key.
-   * @param {String} key This is the key of the item to retrieve.
+   * Retrieves the value of a given key.
+   * @param {String} key The key of the item to retrieve.
    * @returns {String | Object}
    */
   async get(key) {
@@ -38,7 +38,7 @@ class RedisClient {
   }
 
   /**
-   * Storing a key and its value along with an expiration time.
+   * Stores a key and its value along with an expiration time.
    * @param {String} key The key of the item to store.
    * @param {String | Number | Boolean} value The item to store.
    * @param {Number} duration The expiration time of the item in seconds.
